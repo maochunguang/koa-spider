@@ -27,12 +27,12 @@ exports.download = async function(ctx, next) {
         let item = links[i];
         let index = item.split('___')[0];
         let src = item.split('___')[1];
-        downloadTask.push(download(src, dir, index + links[i].substr(-4, 4)));
+        downloadTask.push(downloadImg(src, dir, index + links[i].substr(-4, 4)));
     }
     await Promise.all(downloadTask);
 }
 
-async function download(url, dir, filename) {
+async function downloadImg(url, dir, filename) {
     console.log('download begin---', url);
     request.get(url).pipe(fs.createWriteStream(dir + "/" + filename)).on('close', function() {
         console.log('download success', url);
