@@ -13,6 +13,12 @@ http://aaaaaaaaa/xemh/491_3.html,
 下载地址链接：http://pan.baidu.com/s/1pLyPlz1 密码：wip3
 3. 生成对应的漫画文件
 
+## 项目说明
+* 使用koa2.x，nodejs>=7.6,
+* 使用async await解决异步，
+* 使用request-promise配合async await解决请求异步
+* 使用cheerio处理选择img标签
+
 ## 安装Node.js >= 7.6
 http://nodejs.org/download/
 ## 安装依赖包
