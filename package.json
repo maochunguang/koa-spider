@@ -1,0 +1,27 @@
+{
+    "name": "koa-spider",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "node bin/www",
+        "dev": "./node_modules/.bin/nodemon bin/www",
+        "prd": "pm2 start bin/www",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "cheerio": "^0.22.0",
+        "debug": "^2.6.3",
+        "koa": "^2.2.0",
+        "koa-bodyparser": "^3.2.0",
+        "koa-convert": "^1.2.0",
+        "koa-json": "^2.0.2",
+        "koa-logger": "^2.0.1",
+        "koa-onerror": "^1.2.1",
+        "mkdirp": "^0.5.1",
+        "request": "^2.81.0",
+        "request-promise": "^4.2.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.8.1"
+    }
+}
